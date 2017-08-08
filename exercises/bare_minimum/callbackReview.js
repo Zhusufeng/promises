@@ -10,11 +10,11 @@ var pluckFirstLineFromFile = function (filePath, cb) {
   // TODO
   fs.readFile(filePath, function(err, data) {
     if (err) {
-      console.log('err::::::::\n', err);
+      // console.log('err::::::::\n', err);
       cb(err);
     } else {
       var firstLine = data.toString().split('\n')[0];
-      console.log('data', firstLine);
+      // console.log('data', firstLine);
       cb(err, firstLine);
     }
   });
